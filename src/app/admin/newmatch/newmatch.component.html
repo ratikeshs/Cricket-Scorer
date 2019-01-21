@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="card w-50 mt-2 float-center">
+            <div class="card-header float-center">New Match</div>
+            <div class="card-body">
+                <div ng-controller="MyCtrl">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Team1 Name</label>
+                            <input type="text" class="form-control" [(ngModel)]='team1Name'>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Team2 Name</label>
+                            <input type="text" class="form-control" [(ngModel)]='team2Name'>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Select Toss</label>
+                            <select class="custom-select form-control ml-0" placeholder='Select Toss' [(ngModel)]='toss'>
+                                <option selected>Select Toss</option>
+                                <option> {{team1Name}}</option>
+                                <option> {{team2Name}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Select Bat/Bowl</label>
+                            <select class="custom-select mr-sm-2"  [(ngModel)]='decision'>
+                                <option value="1" >Batting</option>
+                                <option value="2">Bowling</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Enter Overs</label>
+                            <input type="text" class="form-control" [(ngModel)]='overs'>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="onDefineTeams()">Define Teams</button>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

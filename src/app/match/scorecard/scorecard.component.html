@@ -1,0 +1,41 @@
+<div class="col-sm-3 col-md-12">
+  <table class="table">
+    <thead class="thead-dark">
+      <!-- <h3>({{+matchService.getMatch().getTotalRuns()}}/)</h3> -->
+      <tr>
+        <!-- <th scope="col">#</th> -->
+        <!-- <th scope="col" colspan="3"></th> -->
+      </tr>
+      <tr>
+        <th scope="col">Batsman</th>
+        <!-- <th scope="col">Status</th> -->
+        <th scope="col">Run</th>
+        <th scope="col">Ball</th>
+        <th scope="col">Strike Rate</th>
+      </tr>
+    </thead>
+    <!-- <tbody> -->
+      <!-- <tr *ngFor="let commentry of matchService.getMatch().getCommentry().reverse()"> -->
+        <!-- <th scope="row"> {{commentry.getNumberOfOvers()}}.{{commentry.getBalls()}} </th> -->
+        <!-- <td scope="row"> {{commentry.getOnStrikeBatsmanName()}}. </td>
+        <td>{{commentry.getRunsPerBall()}}</td>
+        <td>{{commentry.getBalls()}}</td>
+        <td>{{commentry.getNumberOfOvers()}}</td> -->
+        <!-- <td>{{commentry.getRunsOnCurrentBall()}}</td>
+          <td>{{commentry.getStrikeBatsman()}} To {{commentry.getCurrentBowler()}}-{{commentry.getDescriptionForBall()}}</td> -->
+        <!-- </tr> -->
+    <!-- </tbody> -->
+
+
+    <tbody>
+          <!-- <th scope="row"> {{commentry.getNumberOfOvers()}}.{{commentry.getBalls()}} </th> -->
+          <td scope="row"> {{matchService.getMatch().getPlayer1Details().getPlayerName()}} </td>
+          <td>{{ matchService.getMatch().getRundetailsOfPlayer1().getPlayer1TotalRuns()}}</td>
+          <td>{{ matchService.getMatch().getRundetailsOfPlayer1().getPlayer1TotalBalls()}}</td>
+          <!-- <td>{{getPlayer1TotalBalls()}}</td> -->
+          <!-- <td>{{commentry.getRunsOnCurrentBall()}}</td>
+            <td>{{commentry.getStrikeBatsman()}} To {{commentry.getCurrentBowler()}}-{{commentry.getDescriptionForBall()}}</td> -->
+    </tbody>
+  </table>
+</div>
+  
