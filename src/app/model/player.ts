@@ -23,37 +23,4 @@ export class Player{
     getPlayerName() {
         return this.name;
     }
-
-    
-
-    // setPlayer1TotalRuns(player1TotalRuns) {
-    //     this.player1TotalRuns+=player1TotalRuns;
-    // }
-
-    // setPlayer2TotalRuns(player2TotalRuns) {
-    //     this.player2TotalRuns+=player2TotalRuns;
-    // }
-
-    // setPlayer1TotalBalls(player1TotalBalls) {
-    //     this.player1TotalBalls+=player1TotalBalls;
-    // }
-
-    // setPlayer2TotalBalls(player2TotalBalls) {
-    //     this.player2TotalBalls+=player2TotalBalls;
-    // }
-
-    // getPlayer1TotalRuns() {
-    //     return this.player1TotalRuns;
-    // }
-
-    // getPlayer2TotalRuns() {
-    //     return this.player2TotalRuns;
-    // }
-
-    // getPlayer1TotalBalls() {
-    //     return this.player1TotalBalls;
-    // }
-    // getPlayer2TotalBalls() {
-    //     return this.player2TotalBalls;
-    // }
 }

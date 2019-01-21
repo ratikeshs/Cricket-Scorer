@@ -1,4 +1,5 @@
 export class Commentry {
+    
     private onStrikeBatsmanName:string;
     private nonStrikeBatsmanName:string;
     private bowlerName:string;
